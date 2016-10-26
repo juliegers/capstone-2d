@@ -7,6 +7,8 @@
 #include "Angel.h"
 #include <vector>
 #include <list>
+#include <limits>
+#include <string.h>
 
 using namespace Angel;
 
@@ -17,16 +19,21 @@ public:
   std::vector < vec2 > uvs;
   std::vector < vec3 > normals;
   
-  vec3 box_min = vec3(std::numeric_limits< float >::max() ,
-                      std::numeric_limits< float >::max() ,
-                      std::numeric_limits< float >::max() );
-  vec3 box_max = vec3(0,0,0);
-  vec3 center = vec3(0,0,0);
-  float scale = 1.0;
+  vec3 box_min;
+  vec3 box_max;
+  vec3 center;
+  float scale;
   
-  mat4 model_view = mat4();
+  mat4 model_view;
   
-  Mesh(const char * path){ loadOBJ(path); }
+  Mesh(const char * path)
+    : box_min(std::numeric_limits< float >::max(),
+              std::numeric_limits< float >::max(),
+              std::numeric_limits< float >::max() ),
+    box_max(0,0,0),
+    center(0,0,0),
+    scale(1.0),
+    model_view(){ loadOBJ(path); }
   
   unsigned int getNumTri(){ return vertices.size()/3; }
 
@@ -74,7 +81,7 @@ public:
         temp_normals.push_back(normal);
       }else if ( strcmp( lineHeader, "f" ) == 0 ){
         std::string vertex1, vertex2, vertex3;
-        unsigned int vertexIndex[3], uvIndex[3], normalIndex[3];
+        int vertexIndex[3], uvIndex[3], normalIndex[3];
         int matches = sscanf(&line[2], "%d/%d/%d %d/%d/%d %d/%d/%d\n", &vertexIndex[0], &uvIndex[0], &normalIndex[0],
                                                                        &vertexIndex[1], &uvIndex[1], &normalIndex[1],
                                                                        &vertexIndex[2], &uvIndex[2], &normalIndex[2]);
@@ -89,6 +96,25 @@ public:
             return false;
           }
         }
+
+        /* handle negative indices */
+        /* (adjust for size during processing of each face, as per the old
+         *  OBJ specification, instead of after the end of the file) */
+        for (int negati = 0; negati < 3; negati++){
+            if (vertexIndex[negati] < 0){
+                vertexIndex[negati]+=temp_vertices.size();
+                vertexIndex[negati]++; /* <- OBJ indices are one-based */
+            }
+            if (uvIndex[negati] < 0){
+                uvIndex[negati]+=temp_uvs.size();
+                uvIndex[negati]++;
+            }
+            if (normalIndex[negati] < 0){
+                normalIndex[negati]+=temp_normals.size();
+                normalIndex[negati]++;
+            }
+        }
+
         vertexIndices.push_back(vertexIndex[0]);
         vertexIndices.push_back(vertexIndex[1]);
         vertexIndices.push_back(vertexIndex[2]);
