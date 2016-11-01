@@ -64,8 +64,8 @@ static void error_callback(int error, const char* description)
   fprintf(stderr, "Error: %s\n", description);
 }
 
-static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
-{
+//User interaction handler
+static void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods){
   if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
     glfwSetWindowShouldClose(window, GLFW_TRUE);
   if (key == GLFW_KEY_SPACE && action == GLFW_PRESS){
@@ -74,10 +74,9 @@ static void key_callback(GLFWwindow* window, int key, int scancode, int action, 
   if (key == GLFW_KEY_W && action == GLFW_PRESS){
     wireframe = !wireframe;
   }
-
-  
 }
 
+//User interaction handler
 static void mouse_click(GLFWwindow* window, int button, int action, int mods){
   
   if (GLFW_RELEASE == action){
@@ -99,6 +98,7 @@ static void mouse_click(GLFWwindow* window, int button, int action, int mods){
   beginx = xpos; beginy = ypos;
 }
 
+//User interaction handler
 void mouse_move(GLFWwindow* window, double x, double y){
   
   int W, H;
@@ -170,27 +170,28 @@ void init(){
   
   glBindFragDataLocation(program, 0, "fragColor");
 
-  // set up vertex arrays
+  //Per vertex attributes
   GLuint vPosition = glGetAttribLocation( program, "vPosition" );
-  
   GLuint vNormal = glGetAttribLocation( program, "vNormal" );
+
+  //Compute ambient, diffuse, and specular terms
   color4 ambient_product  = light_ambient * material_ambient;
   color4 diffuse_product  = light_diffuse * material_diffuse;
   color4 specular_product = light_specular * material_specular;
   
-  //Retrieve lighting/material uniform variable locations
-  
+  //Retrieve and set uniform variables
   glUniform4fv( glGetUniformLocation(program, "LightPosition"), 1, light_position);
   glUniform4fv( glGetUniformLocation(program, "AmbientProduct"), 1, ambient_product );
   glUniform4fv( glGetUniformLocation(program, "DiffuseProduct"), 1, diffuse_product );
   glUniform4fv( glGetUniformLocation(program, "SpecularProduct"), 1, specular_product );
   glUniform1f(  glGetUniformLocation(program, "Shininess"), material_shininess );
   
-  // Retrieve transformation uniform variable locations
+  //Matrix uniform variable locations
   ModelView_loc = glGetUniformLocation( program, "ModelView" );
   NormalMatrix_loc = glGetUniformLocation( program, "NormalMatrix" );
   Projection_loc = glGetUniformLocation( program, "Projection" );
   
+  //===== Send data to GPU ======
   vao.resize(_TOTAL_MODELS);
   glGenVertexArrays( _TOTAL_MODELS, &vao[0] );
   
@@ -219,13 +220,17 @@ void init(){
 
   }
   
-  
+  //===== End: Send data to GPU ======
 
+
+  // ====== Enable some opengl capabilitions ======
   glEnable( GL_DEPTH_TEST );
   glShadeModel(GL_SMOOTH);
 
   glClearColor( 0.8, 0.8, 1.0, 1.0 );
   
+  //===== Initalize some program state variables ======
+
   //Quaternion trackball variables, you can ignore
   scaling  = 0;
   moving   = 0;
@@ -243,6 +248,11 @@ void init(){
   
   wireframe = false;
   current_draw = 0;
+  
+  lbutton_down = false;
+
+
+  //===== End: Initalize some program state variables ======
 
 }
 
@@ -269,9 +279,7 @@ int main(void){
     exit(EXIT_FAILURE);
   }
   
-  
-  lbutton_down = false;
-  
+  //Set key and mouse callback functions
   glfwSetKeyCallback(window, key_callback);
   glfwSetMouseButtonCallback(window, mouse_click);
   glfwSetCursorPosCallback(window, mouse_move);
@@ -285,6 +293,7 @@ int main(void){
   
   while (!glfwWindowShouldClose(window)){
     
+    //Display as wirfram, boolean tied to keystoke 'w'
     if(wireframe){
       glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
     }else{
@@ -296,31 +305,38 @@ int main(void){
     glViewport(0, 0, width, height);
     
     GLfloat aspect = GLfloat(width)/height;
+    
+    //Projection matrix
     mat4  projection = Perspective( 45.0, aspect, 0.5, 5.0 );
     
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+    //"Camera" position
     const vec3 viewer_pos( 0.0, 0.0, 2.0 );
+    
+    //Track_ball rotation matrix
     mat4 track_ball =  mat4(curmat[0][0], curmat[1][0], curmat[2][0], curmat[3][0],
                             curmat[0][1], curmat[1][1], curmat[2][1], curmat[3][1],
                             curmat[0][2], curmat[1][2], curmat[2][2], curmat[3][2],
                             curmat[0][3], curmat[1][3], curmat[2][3], curmat[3][3]);
  
-    mat4 user_MV  =  Translate( -viewer_pos ) *                    //Move Camera Back
+    //Modelview based on user interaction
+    mat4 user_MV  =  Translate( -viewer_pos ) *                    //Move Camera Back to -viewer_pos
                      Translate(ortho_x, ortho_y, 0.0) *            //Pan Camera
                      track_ball *                                  //Rotate Camera
                      Scale(scalefactor,scalefactor,scalefactor);   //User Scale
     
 
+    // ====== Draw ======
     glBindVertexArray(vao[current_draw]);
     glBindBuffer( GL_ARRAY_BUFFER, buffer[current_draw] );
-    
     
     glUniformMatrix4fv( ModelView_loc, 1, GL_TRUE, user_MV*mesh[current_draw].model_view);
     glUniformMatrix4fv( Projection_loc, 1, GL_TRUE, projection );
     glUniformMatrix3fv( NormalMatrix_loc, 1, GL_TRUE, Normal(user_MV*mesh[current_draw].model_view) );
 
     glDrawArrays( GL_TRIANGLES, 0, mesh[current_draw].vertices.size() );
+    // ====== End: Draw ======
 
     
     glfwSwapBuffers(window);
