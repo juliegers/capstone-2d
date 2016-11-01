@@ -23,14 +23,15 @@ color4 material_specular( 0.2, 0.2, 0.2, 1.0 );
 float  material_shininess = 60;
 
 
-enum{_CUBE, _TEAPOT, _BUNNY, _DRAGON, _BUDDHA, _BB8, _R2D2, _TOTAL_MODELS};
+enum{_CUBE, _TEAPOT, _BUNNY, _DRAGON, _BUDDHA, _BB8, _R2D2, _TIE_FIGHTER, _TOTAL_MODELS};
 std::string files[_TOTAL_MODELS] = {"/models/cube.obj",
                                     "/models/wt_teapot.obj",
                                     "/models/bunny.obj",
                                     "/models/dragon.obj",
                                     "/models/buddha.obj",
                                     "/models/BB8.obj",
-                                    "/models/R2D2_Standing.obj"};
+                                    "/models/R2D2_Standing.obj",
+                                    "/models/Tie_Fighter.obj"};
 
 
 std::vector < Mesh > mesh;
