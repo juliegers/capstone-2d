@@ -9,6 +9,7 @@
 #include <list>
 #include <limits>
 #include <string.h>
+#include <algorithm>
 
 using namespace Angel;
 
@@ -27,9 +28,9 @@ public:
   mat4 model_view;
   
   Mesh(const char * path)
-    : box_min(std::numeric_limits< float >::max(),
-              std::numeric_limits< float >::max(),
-              std::numeric_limits< float >::max() ),
+    : box_min((std::numeric_limits< float >::max)(),
+              (std::numeric_limits< float >::max)(),
+              (std::numeric_limits< float >::max)() ),
     box_max(0,0,0),
     center(0,0,0),
     scale(1.0),
@@ -163,7 +164,7 @@ public:
     
     
     center = box_min+(box_max-box_min)/2.0;
-    scale = std::max(box_max.x - box_min.x, box_max.y-box_min.y);
+    scale = (std::max)(box_max.x - box_min.x, box_max.y-box_min.y);
     
     model_view = Scale(1.0/scale,           //Make the extents 0-1
                        1.0/scale,
