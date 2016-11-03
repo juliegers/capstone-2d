@@ -15,7 +15,7 @@ void main()
 {
   
   // Transform vertex normal into eye coordinates
-  N = vec4(normalize(NormalMatrix*vec3(vNormal)), 0.0);
+  N = vec4(normalize(NormalMatrix*vNormal), 0.0);
   
   // Transform vertex position into eye coordinates
   pos = ModelView * vPosition;
