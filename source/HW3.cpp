@@ -19,8 +19,8 @@ color4 light_specular( 1.0, 1.0, 1.0, 1.0 );
 // Initialize shader material parameters
 color4 material_ambient( 0.1, 0.1, 0.1, 1.0 );
 color4 material_diffuse( 1.0, 0.8, 0.0, 1.0 );
-color4 material_specular( 0.2, 0.2, 0.2, 1.0 );
-float  material_shininess = 60;
+color4 material_specular( 0.8, 0.8, 0.8, 1.0 );
+float  material_shininess = 10;
 
 
 enum{_CUBE, _TEAPOT, _BUNNY, _DRAGON, _BUDDHA, _BB8, _R2D2, _TIE_FIGHTER, _TOTAL_MODELS};
