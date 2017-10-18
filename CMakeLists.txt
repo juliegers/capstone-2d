@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8)
-PROJECT(HW3)
+PROJECT(ASSIGNMENT_3)
 SET(CMAKE_BUILD_TYPE "Release")
 
 if (!MSVC)
@@ -22,8 +22,8 @@ CONFIGURE_FILE(${CMAKE_SOURCE_DIR}/source/common/SourcePath.cpp.in ${CMAKE_SOURC
 
 include_directories(${CMAKE_SOURCE_DIR}/source/common
 					${CMAKE_SOURCE_DIR}/shaders)
-add_executable(HW3 WIN32 MACOSX_BUNDLE 
-	source/HW3.cpp 
+add_executable(model_viewer WIN32 MACOSX_BUNDLE 
+	source/model_viewer.cpp 
 	source/common/Angel.h
 	source/common/CheckError.h
 	source/common/mat.h
@@ -40,14 +40,14 @@ add_executable(HW3 WIN32 MACOSX_BUNDLE
 #Windows cleanup
 if (MSVC)
     # Tell MSVC to use main instead of WinMain for Windows subsystem executables
-    set_target_properties(HW3 PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
+    set_target_properties(model_viewer PROPERTIES LINK_FLAGS "/ENTRY:mainCRTStartup")
 endif()
 
 #Apple cleanup
 if (APPLE)
-    set_target_properties(HW3 PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "simple")
+    set_target_properties(model_viewer PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "simple")
 	
-    set_target_properties(HW3 PROPERTIES
+    set_target_properties(model_viewer PROPERTIES
                           MACOSX_BUNDLE_SHORT_VERSION_STRING ${GLFW_VERSION}
                           MACOSX_BUNDLE_LONG_VERSION_STRING ${GLFW_VERSION_FULL}
     					  MACOSX_BUNDLE_ICON_FILE glfw.icns)				  
