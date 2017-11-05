@@ -1,10 +1,6 @@
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-
-#include "Angel.h"
+#include "common.h"
 #include "SourcePath.h"
-#include "Trackball.h"
-#include "ObjMesh.h"
+
 
 using namespace Angel;
 
@@ -273,7 +269,7 @@ int main(void){
   
   glfwWindowHint(GLFW_SAMPLES, 4);
   
-  window = glfwCreateWindow(512, 512, "HW3 3D Shading", NULL, NULL);
+  window = glfwCreateWindow(512, 512, "Assignment 3 - 3D Shading", NULL, NULL);
   if (!window){
     glfwTerminate();
     exit(EXIT_FAILURE);

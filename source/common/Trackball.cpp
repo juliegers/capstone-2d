@@ -1,6 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "common.h"
 
 /*
  * (c) Copyright 1993, 1994, Silicon Graphics, Inc.

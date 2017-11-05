@@ -7,9 +7,7 @@
 #ifndef __CHECKERROR_H__
 #define __CHECKERROR_H__
 
-#include <stdio.h>
-//#include <GL/gl.h>
-//#include <GLUT/glut.h>
+#include "common.h"
 
 //----------------------------------------------------------------------------
 

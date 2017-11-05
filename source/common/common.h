@@ -1,23 +1,28 @@
-//////////////////////////////////////////////////////////////////////////////
 //
-//  --- Angel.h ---
+//  common.h
+//  ASSIGNMENT_3
 //
-//   The main header file for all examples from Angel 6th Edition
+//  Created by Brian Summa on 11/5/17.
 //
-//////////////////////////////////////////////////////////////////////////////
+//
 
-#ifndef __ANGEL_H__
-#define __ANGEL_H__
-
-//----------------------------------------------------------------------------
-// 
-// --- Include system headers ---
-//
+#ifndef common_h
+#define common_h
 
 #include <cmath>
 #include <iostream>
 #include <cstdio>
 #include <stdlib.h>
+#include <stdio.h>
+#include <vector>
+#include <list>
+#include <limits>
+#include <string.h>
+#include <algorithm>
+
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
 
 //  Define M_PI in the case it's not defined in the math header file
 #ifndef M_PI
@@ -33,20 +38,20 @@
 //
 
 namespace Angel {
-
-//  Helper function to load vertex and fragment shader files
-//GLuint InitShader( const char* vertexShaderFile,
-//		   const char* fragmentShaderFile );
-
-//  Defined constant for when numbers are too small to be used in the
-//    denominator of a division operation.  This is only used if the
-//    DEBUG macro is defined.
-const GLfloat  DivideByZeroTolerance = GLfloat(1.0e-07);
-
-//  Degrees-to-radians constant 
-const GLfloat  DegreesToRadians = M_PI / 180.0;  
-const GLfloat  RadiansToDegrees = 180.0/M_PI;
-
+  
+  //  Helper function to load vertex and fragment shader files
+  //GLuint InitShader( const char* vertexShaderFile,
+  //		   const char* fragmentShaderFile );
+  
+  //  Defined constant for when numbers are too small to be used in the
+  //    denominator of a division operation.  This is only used if the
+  //    DEBUG macro is defined.
+  const GLfloat  DivideByZeroTolerance = GLfloat(1.0e-07);
+  
+  //  Degrees-to-radians constant
+  const GLfloat  DegreesToRadians = M_PI / 180.0;
+  const GLfloat  RadiansToDegrees = 180.0/M_PI;
+  
 }  // namespace Angel
 
 #include "vec.h"
@@ -108,4 +113,8 @@ static void check_program_link(GLuint program){
 }
 
 
-#endif // __ANGEL_H__
+#include "Trackball.h"
+#include "ObjMesh.h"
+
+
+#endif /* common_h */
