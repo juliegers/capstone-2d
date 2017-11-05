@@ -24,7 +24,7 @@ include_directories(${CMAKE_SOURCE_DIR}/source/common
 					${CMAKE_SOURCE_DIR}/shaders)
 add_executable(model_viewer WIN32 MACOSX_BUNDLE 
 	source/model_viewer.cpp 
-	source/common/Angel.h
+	source/common/common.h
 	source/common/CheckError.h
 	source/common/mat.h
 	source/common/ObjMesh.cpp
