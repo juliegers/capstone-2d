@@ -8,23 +8,23 @@ default:
 # link.  This forces Xcode to relink the targets from scratch.  It
 # does not seem to check these dependencies itself.
 PostBuild.glfw.Debug:
-/Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/Debug/libglfw3.a:
-	/bin/rm -f /Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/Debug/libglfw3.a
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/Debug/libglfw3.a:
+	/bin/rm -f /Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/Debug/libglfw3.a
 
 
 PostBuild.glfw.Release:
-/Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/Release/libglfw3.a:
-	/bin/rm -f /Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/Release/libglfw3.a
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/Release/libglfw3.a:
+	/bin/rm -f /Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/Release/libglfw3.a
 
 
 PostBuild.glfw.MinSizeRel:
-/Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/MinSizeRel/libglfw3.a:
-	/bin/rm -f /Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/MinSizeRel/libglfw3.a
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/MinSizeRel/libglfw3.a:
+	/bin/rm -f /Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/MinSizeRel/libglfw3.a
 
 
 PostBuild.glfw.RelWithDebInfo:
-/Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a:
-	/bin/rm -f /Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a:
+	/bin/rm -f /Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a
 
 
 

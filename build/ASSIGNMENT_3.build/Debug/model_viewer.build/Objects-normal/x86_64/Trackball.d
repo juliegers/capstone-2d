@@ -1,10 +1,10 @@
 dependencies: \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/Trackball.cpp \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/common.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/glfw-3.2/deps/glad/glad.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/glfw-3.2/deps/KHR/khrplatform.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/glfw-3.2/include/GLFW/glfw3.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/vec.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/mat.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/Trackball.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/ObjMesh.h
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/Trackball.cpp \
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/common.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/glfw-3.2/deps/glad/glad.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/glfw-3.2/deps/KHR/khrplatform.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/glfw-3.2/include/GLFW/glfw3.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/vec.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/mat.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/Trackball.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/ObjMesh.h

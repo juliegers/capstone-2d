@@ -2,9 +2,9 @@
 # Custom rules for ZERO_CHECK
 .SUFFIXES: 
 all: \
-	/Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/CMakeFiles/ZERO_CHECK
+	/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/CMakeFiles/ZERO_CHECK
 
 
-/Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/CMakeFiles/ZERO_CHECK: 
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/CMakeFiles/ZERO_CHECK: 
 	echo ""
-	make -f /Users/juliegerstley/Downloads/Capstone\ 2D/build/glfw-3.2/CMakeScripts/ReRunCMake.make
+	make -f /Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/CMakeScripts/ReRunCMake.make

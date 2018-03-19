@@ -1,4 +1,4 @@
 dependencies: \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/glfw-3.2/deps/glad.c \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/glfw-3.2/deps/glad/glad.h \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/glfw-3.2/deps/KHR/khrplatform.h
+  /Users/rickidicristoforo/Desktop/capstone-2d/glfw-3.2/deps/glad.c \
+  /Users/rickidicristoforo/Desktop/capstone-2d/glfw-3.2/deps/glad/glad.h \
+  /Users/rickidicristoforo/Desktop/capstone-2d/glfw-3.2/deps/KHR/khrplatform.h

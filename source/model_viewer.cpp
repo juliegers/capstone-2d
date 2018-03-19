@@ -33,10 +33,9 @@ float material_shininess[8] = {0.6, 0.1, 0.9, 0.4, 0.7, 0.4, 0.2, 0.3};
 
 //Iterating through all models
 //Files in models (obj)- list of vertices and every vertex has a normal, then faces defined (triangles) which reference a vertex index, if they had a mapping UV coordinate they would be in the second position
-enum{_CUBE, _CYLINDER, _DODEC, _SPHERE, _CUBOID, _HELIX, _ICOSA, _PYRAMID, _TORUS, _TOTAL_MODELS};
+enum{ _CYLINDER, _DODEC, _SPHERE, _CUBOID, _HELIX, _ICOSA, _PYRAMID, _TORUS, _TOTAL_MODELS};
 //List of files to load
 std::string files[_TOTAL_MODELS] = {
-                                    "/models/cube.obj",
                                     "/models/cylinder.obj",
                                     "/models/dodecahedron.obj",
                                     "/models/sphere.obj",

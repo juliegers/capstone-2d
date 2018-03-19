@@ -1,7 +1,7 @@
-/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir
-/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/glad.dir
-/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/ALL_BUILD.dir
-/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/ZERO_CHECK.dir
-/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/CMakeFiles/ALL_BUILD.dir
-/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/CMakeFiles/ZERO_CHECK.dir
-/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/CMakeFiles/glfw.dir
+/Users/rickidicristoforo/Desktop/capstone-2d/build/CMakeFiles/model_viewer.dir
+/Users/rickidicristoforo/Desktop/capstone-2d/build/CMakeFiles/glad.dir
+/Users/rickidicristoforo/Desktop/capstone-2d/build/CMakeFiles/ALL_BUILD.dir
+/Users/rickidicristoforo/Desktop/capstone-2d/build/CMakeFiles/ZERO_CHECK.dir
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/CMakeFiles/ALL_BUILD.dir
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/CMakeFiles/ZERO_CHECK.dir
+/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/src/CMakeFiles/glfw.dir
