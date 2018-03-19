@@ -1,0 +1,1226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		80E7E48A3C3347BDB4A975E7 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 66C66F25AEED47759B43976D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				4519B812E11447ECA0F6FBCA /* CMake Rules */,
+			);
+			dependencies = (
+				AD3AD1A074D346CBAE74EBF7 /* PBXTargetDependency */,
+				16AB7C7239A04FA5B3E6E3C0 /* PBXTargetDependency */,
+				9603762AA8B841F3AD4A5762 /* PBXTargetDependency */,
+				6247198629C24ADA88D18A0E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		81BB684F3B8C4DEEAEB9B038 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3D15364CB6FF4E1686289D98 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C5CB9820CE5C4858BCD8823F /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02062FBF4028431D8E1DC1DF /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/input.c */ = {isa = PBXBuildFile; fileRef = D102FF965C8C4DBBA021301D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/input.c */; };
+		079EEA032F124A0ABA394D95 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.c */ = {isa = PBXBuildFile; fileRef = 03244A6A27734B8EA00ECC48 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.c */; };
+		0C2288E32145439FACC04450 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_time.c */ = {isa = PBXBuildFile; fileRef = B83FD472D64A44ADA4D5B320 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_time.c */; };
+		0E54FEE0A16E4F6F9DFF1C8D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_init.m */ = {isa = PBXBuildFile; fileRef = 716661021E604C43A513A6E1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_init.m */; };
+		1089C3F45EAD4F4487C0B117 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/common.h */ = {isa = PBXBuildFile; fileRef = 707FA4A8FCF94DDB87939E2E /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/common.h */; };
+		1A8E9DF8570B4ABD98AE6265 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/CheckError.h */ = {isa = PBXBuildFile; fileRef = ED546C4AEFA8460FA9BE1A19 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/CheckError.h */; };
+		209B33FC295449BA99AD518E /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad/glad.h */ = {isa = PBXBuildFile; fileRef = 93F20D84B2FD4982995C772B /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad/glad.h */; };
+		26B472784EA9437A8BCDB7F0 /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E80A1A5B7778497889E276E0 /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */; };
+		340E2E6B0D504C22A1583FC6 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.h */ = {isa = PBXBuildFile; fileRef = 43A2C2A2B57D4E7AA53DD950 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.h */; };
+		425C5237019C415C8EF864BA /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.cpp */ = {isa = PBXBuildFile; fileRef = DCE7F7C93C1E4739BAFD6CB9 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.cpp */; };
+		47EA3AE9022A44FF82E2239A /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXBuildFile; fileRef = 49814BCC3BDC486ABC2BB9A4 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.h */; };
+		4F99D78C4B5A49BD86A18835 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.h */ = {isa = PBXBuildFile; fileRef = 3CDC0E6AA9284DA88EBC2733 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.h */; };
+		5108487605AB439AB8917F8E /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/vulkan.c */ = {isa = PBXBuildFile; fileRef = 3546856C09A74A43A2CC551D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/vulkan.c */; };
+		5CCD5AECBA0A400DB82C1E27 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/context.c */ = {isa = PBXBuildFile; fileRef = FE6062AA4694448D9B3E72F1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/context.c */; };
+		5EEE144DFCEF4C07B34FE098 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/monitor.c */ = {isa = PBXBuildFile; fileRef = 612014954B0E4B3C8256C228 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/monitor.c */; };
+		664B2CDFC16E4C6F93F1DA5B /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/init.c */ = {isa = PBXBuildFile; fileRef = 598FA5029C164685BF52FB85 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/init.c */; };
+		737804B123BE48FB9359B958 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/internal.h */ = {isa = PBXBuildFile; fileRef = 115A02D4C49843B28B12AAAA /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/internal.h */; };
+		74606843B29D49D884967BAC /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad.c */ = {isa = PBXBuildFile; fileRef = 7DA059EFCB5D4CD1863CB25F /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad.c */; };
+		7A485C49E9D549CA9B633EA8 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/fshader.glsl */ = {isa = PBXBuildFile; fileRef = B800460B3CC44CE085B3A310 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/fshader.glsl */; };
+		7CB06FF1DF7E4E54BA80E2FB /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.h */ = {isa = PBXBuildFile; fileRef = 3EB17F204C994D04B53242CC /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.h */; };
+		7E82985B15D0483BB73FF251 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/vshader.glsl */ = {isa = PBXBuildFile; fileRef = DF9C85B01AD24795ADFBCD66 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/vshader.glsl */; };
+		867706F4304B4D7885850FFF /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXBuildFile; fileRef = 7A6326FD2E27493299124EBB /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3.h */; };
+		868C776BBBCC4869ADA4980F /* /Users/juliegerstley/Downloads/Capstone 2D/source/model_viewer.cpp */ = {isa = PBXBuildFile; fileRef = D877141B147F45898EEDB859 /* /Users/juliegerstley/Downloads/Capstone 2D/source/model_viewer.cpp */; };
+		87DFDB1DE0374FF98E84C973 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXBuildFile; fileRef = 71F70DFB3B234FAC8EA02D7E /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_platform.h */; };
+		8AE16828433E41F79F8AB381 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.h */ = {isa = PBXBuildFile; fileRef = 7DD6899831CB49DF864F4D2C /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.h */; };
+		96D1D988C85B44A3811E7EE5 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/window.c */ = {isa = PBXBuildFile; fileRef = 8B7CC882F1DD4BE8AAAB5199 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/window.c */; };
+		A4ECA12A16BD41CBBA0584FD /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.cpp */ = {isa = PBXBuildFile; fileRef = 1CC26188BDEA41618AFF261A /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.cpp */; };
+		AB440A451CAA4BCABFF022BF /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXBuildFile; fileRef = 8D50DF96E8FD47BCA1953346 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3native.h */; };
+		AC094F9712D440FEBDDB2541 /* /Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/glfw_config.h */ = {isa = PBXBuildFile; fileRef = 42017941BB064CEA83F22692 /* /Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/glfw_config.h */; };
+		AC31EDEC4A7B4A259FEF16F9 /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F17E276D938045538D9EA4DB /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */; };
+		B5A868B3B33743D6B8DC17E6 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.cpp */ = {isa = PBXBuildFile; fileRef = 08FFBFF3FEFD41DC9C083922 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.cpp */; };
+		B608C848F7A549518B01394C /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/vec.h */ = {isa = PBXBuildFile; fileRef = ADDA7AC129E14213B87D0A8D /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/vec.h */; };
+		BE589B9209FA4CF1BF70BD78 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 34F165CCCC3D4D5AA81474BF /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/CMakeLists.txt */; };
+		C3C1F9BE447649B882855658 /* /Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist */ = {isa = PBXBuildFile; fileRef = 7BE81EA426BA43C09C6D98E0 /* /Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist */; };
+		C9A69E9651F64FF89E630730 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.m */ = {isa = PBXBuildFile; fileRef = 90A20DBB9E5E4AF7BCDAFFA1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.m */; };
+		CB483F742C1948CEAD636342 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXBuildFile; fileRef = FDF9620955FC46C4A3DFF166 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.m */; };
+		D46125F8D5084C759E3E63DE /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/mat.h */ = {isa = PBXBuildFile; fileRef = C069FA7DC66E4D77B7FEC5DE /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/mat.h */; };
+		DF330C4F80EF44F89C17EA59 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXBuildFile; fileRef = 724B997215B142F0857B22E2 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_monitor.m */; };
+		E804F02566B34B9F86E9E62F /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_window.m */ = {isa = PBXBuildFile; fileRef = 2DBBF094D6A9405793C8E395 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_window.m */; };
+		F6AC42FA5FBA496BB6B35F7B /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.h */ = {isa = PBXBuildFile; fileRef = DBE3C110AEB74232949848FE /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2C2F193FE7C84A6A847C5879 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		6194E46C1984469ABD9AAA4E /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		9EA7596061F04EF9A905F725 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		A5848619E342427A8CDAF3BF /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0FA9F20994914DC8BA79D5B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF7F7CAEC20431B96E08767;
+			remoteInfo = glad;
+		};
+		3169CA524B494BC581DC65A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A24FCFC0264457BA603B027;
+			remoteInfo = model_viewer;
+		};
+		503AA055D94E42B8A28EDAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A0FD0BCE8E4454A0F62A5A;
+			remoteInfo = glfw;
+		};
+		53C7F3150BCA480BA55CE521 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81BB684F3B8C4DEEAEB9B038;
+			remoteInfo = ZERO_CHECK;
+		};
+		8B7EC504AE5643F99B414347 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A0FD0BCE8E4454A0F62A5A;
+			remoteInfo = glfw;
+		};
+		A4CF253152AE400EAF29428F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81BB684F3B8C4DEEAEB9B038;
+			remoteInfo = ZERO_CHECK;
+		};
+		D4BA21C341244704AFC525C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81BB684F3B8C4DEEAEB9B038;
+			remoteInfo = ZERO_CHECK;
+		};
+		D89E958F373E479DAAC1AF62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A0FD0BCE8E4454A0F62A5A;
+			remoteInfo = glfw;
+		};
+		E5A10B4316AE4505AE4F5CA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEFA137A7EF445B6A79462B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF7F7CAEC20431B96E08767;
+			remoteInfo = glad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03244A6A27734B8EA00ECC48 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = posix_tls.c; path = "glfw-3.2/src/posix_tls.c"; sourceTree = SOURCE_ROOT; };
+		08FFBFF3FEFD41DC9C083922 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjMesh.cpp; path = source/common/ObjMesh.cpp; sourceTree = SOURCE_ROOT; };
+		0DF2885EA8114613853C0EBC /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		115A02D4C49843B28B12AAAA /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = internal.h; path = "glfw-3.2/src/internal.h"; sourceTree = SOURCE_ROOT; };
+		1CC26188BDEA41618AFF261A /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Trackball.cpp; path = source/common/Trackball.cpp; sourceTree = SOURCE_ROOT; };
+		2DBBF094D6A9405793C8E395 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_window.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_window.m; path = "glfw-3.2/src/cocoa_window.m"; sourceTree = SOURCE_ROOT; };
+		34F165CCCC3D4D5AA81474BF /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = "glfw-3.2/src/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		3546856C09A74A43A2CC551D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/vulkan.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = vulkan.c; path = "glfw-3.2/src/vulkan.c"; sourceTree = SOURCE_ROOT; };
+		3AF6FFB9B002489EB585A5DB /* glfw */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglfw3.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CDC0E6AA9284DA88EBC2733 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjMesh.h; path = source/common/ObjMesh.h; sourceTree = SOURCE_ROOT; };
+		3EB17F204C994D04B53242CC /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SourcePath.h; path = source/common/SourcePath.h; sourceTree = SOURCE_ROOT; };
+		42017941BB064CEA83F22692 /* /Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/glfw_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw_config.h; path = "build/glfw-3.2/src/glfw_config.h"; sourceTree = SOURCE_ROOT; };
+		43A2C2A2B57D4E7AA53DD950 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Trackball.h; path = source/common/Trackball.h; sourceTree = SOURCE_ROOT; };
+		49814BCC3BDC486ABC2BB9A4 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_joystick.h; path = "glfw-3.2/src/cocoa_joystick.h"; sourceTree = SOURCE_ROOT; };
+		598FA5029C164685BF52FB85 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/init.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = init.c; path = "glfw-3.2/src/init.c"; sourceTree = SOURCE_ROOT; };
+		612014954B0E4B3C8256C228 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/monitor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = monitor.c; path = "glfw-3.2/src/monitor.c"; sourceTree = SOURCE_ROOT; };
+		6D46F87154304BB988FD76B2 /* model_viewer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = model_viewer; sourceTree = BUILT_PRODUCTS_DIR; };
+		707FA4A8FCF94DDB87939E2E /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = source/common/common.h; sourceTree = SOURCE_ROOT; };
+		716661021E604C43A513A6E1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_init.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_init.m; path = "glfw-3.2/src/cocoa_init.m"; sourceTree = SOURCE_ROOT; };
+		71F70DFB3B234FAC8EA02D7E /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_platform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cocoa_platform.h; path = "glfw-3.2/src/cocoa_platform.h"; sourceTree = SOURCE_ROOT; };
+		724B997215B142F0857B22E2 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_monitor.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_monitor.m; path = "glfw-3.2/src/cocoa_monitor.m"; sourceTree = SOURCE_ROOT; };
+		7A6326FD2E27493299124EBB /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3.h; path = "glfw-3.2/include/GLFW/glfw3.h"; sourceTree = SOURCE_ROOT; };
+		7BE81EA426BA43C09C6D98E0 /* /Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist */ = {isa = PBXFileReference; explicitFileType = sourcecode.text.plist; fileEncoding = 4; name = Info.plist; path = build/CMakeFiles/model_viewer.dir/Info.plist; sourceTree = SOURCE_ROOT; };
+		7DA059EFCB5D4CD1863CB25F /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = "glfw-3.2/deps/glad.c"; sourceTree = SOURCE_ROOT; };
+		7DD6899831CB49DF864F4D2C /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nsgl_context.h; path = "glfw-3.2/src/nsgl_context.h"; sourceTree = SOURCE_ROOT; };
+		8B7CC882F1DD4BE8AAAB5199 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/window.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = window.c; path = "glfw-3.2/src/window.c"; sourceTree = SOURCE_ROOT; };
+		8D50DF96E8FD47BCA1953346 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3native.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glfw3native.h; path = "glfw-3.2/include/GLFW/glfw3native.h"; sourceTree = SOURCE_ROOT; };
+		90A20DBB9E5E4AF7BCDAFFA1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = nsgl_context.m; path = "glfw-3.2/src/nsgl_context.m"; sourceTree = SOURCE_ROOT; };
+		93F20D84B2FD4982995C772B /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = "glfw-3.2/deps/glad/glad.h"; sourceTree = SOURCE_ROOT; };
+		ADDA7AC129E14213B87D0A8D /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/vec.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vec.h; path = source/common/vec.h; sourceTree = SOURCE_ROOT; };
+		B4449FBF37054C2CA7A9880C /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B800460B3CC44CE085B3A310 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/fshader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fshader.glsl; path = shaders/fshader.glsl; sourceTree = SOURCE_ROOT; };
+		B83FD472D64A44ADA4D5B320 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_time.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = cocoa_time.c; path = "glfw-3.2/src/cocoa_time.c"; sourceTree = SOURCE_ROOT; };
+		C069FA7DC66E4D77B7FEC5DE /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/mat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mat.h; path = source/common/mat.h; sourceTree = SOURCE_ROOT; };
+		C780BC97765B470B8F53DE74 /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D102FF965C8C4DBBA021301D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/input.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = input.c; path = "glfw-3.2/src/input.c"; sourceTree = SOURCE_ROOT; };
+		D877141B147F45898EEDB859 /* /Users/juliegerstley/Downloads/Capstone 2D/source/model_viewer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = model_viewer.cpp; path = source/model_viewer.cpp; sourceTree = SOURCE_ROOT; };
+		DBE3C110AEB74232949848FE /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = posix_tls.h; path = "glfw-3.2/src/posix_tls.h"; sourceTree = SOURCE_ROOT; };
+		DCE7F7C93C1E4739BAFD6CB9 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SourcePath.cpp; path = source/common/SourcePath.cpp; sourceTree = SOURCE_ROOT; };
+		DF9C85B01AD24795ADFBCD66 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/vshader.glsl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = vshader.glsl; path = shaders/vshader.glsl; sourceTree = SOURCE_ROOT; };
+		E80A1A5B7778497889E276E0 /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ED546C4AEFA8460FA9BE1A19 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/CheckError.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CheckError.h; path = source/common/CheckError.h; sourceTree = SOURCE_ROOT; };
+		F17E276D938045538D9EA4DB /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FDF9620955FC46C4A3DFF166 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; name = cocoa_joystick.m; path = "glfw-3.2/src/cocoa_joystick.m"; sourceTree = SOURCE_ROOT; };
+		FE6062AA4694448D9B3E72F1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/context.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = context.c; path = "glfw-3.2/src/context.c"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		23F8FF2419A341379E812C9A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7DA059EFCB5D4CD1863CB25F /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3A7F0A2F435D4A41B658EABD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3CE9901E12DC40F4B4B38BBF /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F0A2F435D4A41B658EABD /* CMake Rules */,
+				B4449FBF37054C2CA7A9880C /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		41AD6740F5254CF38C0828F8 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED546C4AEFA8460FA9BE1A19 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/CheckError.h */,
+				3CDC0E6AA9284DA88EBC2733 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.h */,
+				3EB17F204C994D04B53242CC /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.h */,
+				43A2C2A2B57D4E7AA53DD950 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.h */,
+				707FA4A8FCF94DDB87939E2E /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/common.h */,
+				C069FA7DC66E4D77B7FEC5DE /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/mat.h */,
+				ADDA7AC129E14213B87D0A8D /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/vec.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		5313C4E11E564DF8ABE0C2A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C780BC97765B470B8F53DE74 /* glad */,
+				6D46F87154304BB988FD76B2 /* model_viewer */,
+				3AF6FFB9B002489EB585A5DB /* glfw */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B579E4A25884351B3918EAF = {
+			isa = PBXGroup;
+			children = (
+				D7615DC1781C446A8618A78A /* model_viewer */,
+				A12AFD2F3DBB46F2B96A5574 /* glad */,
+				3CE9901E12DC40F4B4B38BBF /* ALL_BUILD */,
+				C177ADC3A88B4681806F9CDC /* ZERO_CHECK */,
+				B68F74EE77754260B8C1A60E /* GLFW3 */,
+				5313C4E11E564DF8ABE0C2A5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5C828E8E03D44C7D9C89B9EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BE81EA426BA43C09C6D98E0 /* /Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A12AFD2F3DBB46F2B96A5574 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				AC2B898AA3464180BDFA79F3 /* Header Files */,
+				23F8FF2419A341379E812C9A /* Source Files */,
+				F17E276D938045538D9EA4DB /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		AC2B898AA3464180BDFA79F3 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				93F20D84B2FD4982995C772B /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad/glad.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		B2CF0934AFC54F3FA905DAFE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				08FFBFF3FEFD41DC9C083922 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.cpp */,
+				DCE7F7C93C1E4739BAFD6CB9 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.cpp */,
+				1CC26188BDEA41618AFF261A /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.cpp */,
+				D877141B147F45898EEDB859 /* /Users/juliegerstley/Downloads/Capstone 2D/source/model_viewer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B68F74EE77754260B8C1A60E /* GLFW3 */ = {
+			isa = PBXGroup;
+			children = (
+				E0527D61C0F7415A8A81B005 /* glfw */,
+			);
+			name = GLFW3;
+			sourceTree = "<group>";
+		};
+		C177ADC3A88B4681806F9CDC /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				EE2755FC53A34E72B763EDDC /* CMake Rules */,
+				0DF2885EA8114613853C0EBC /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		C370A4059C364BC1B0427E5D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				716661021E604C43A513A6E1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_init.m */,
+				FDF9620955FC46C4A3DFF166 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.m */,
+				724B997215B142F0857B22E2 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_monitor.m */,
+				B83FD472D64A44ADA4D5B320 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_time.c */,
+				2DBBF094D6A9405793C8E395 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_window.m */,
+				FE6062AA4694448D9B3E72F1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/context.c */,
+				598FA5029C164685BF52FB85 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/init.c */,
+				D102FF965C8C4DBBA021301D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/input.c */,
+				612014954B0E4B3C8256C228 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/monitor.c */,
+				90A20DBB9E5E4AF7BCDAFFA1 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.m */,
+				03244A6A27734B8EA00ECC48 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.c */,
+				3546856C09A74A43A2CC551D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/vulkan.c */,
+				8B7CC882F1DD4BE8AAAB5199 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/window.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D7615DC1781C446A8618A78A /* model_viewer */ = {
+			isa = PBXGroup;
+			children = (
+				B2CF0934AFC54F3FA905DAFE /* Source Files */,
+				41AD6740F5254CF38C0828F8 /* Header Files */,
+				5C828E8E03D44C7D9C89B9EB /* Resources */,
+				E80A1A5B7778497889E276E0 /* /Users/juliegerstley/Downloads/Capstone 2D/CMakeLists.txt */,
+				B800460B3CC44CE085B3A310 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/fshader.glsl */,
+				DF9C85B01AD24795ADFBCD66 /* /Users/juliegerstley/Downloads/Capstone 2D/shaders/vshader.glsl */,
+			);
+			name = model_viewer;
+			sourceTree = "<group>";
+		};
+		E0527D61C0F7415A8A81B005 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				C370A4059C364BC1B0427E5D /* Source Files */,
+				ED9D3D86CC5F48C2B5A26399 /* Header Files */,
+				34F165CCCC3D4D5AA81474BF /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/CMakeLists.txt */,
+			);
+			name = glfw;
+			sourceTree = "<group>";
+		};
+		ED9D3D86CC5F48C2B5A26399 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				42017941BB064CEA83F22692 /* /Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/glfw_config.h */,
+				7A6326FD2E27493299124EBB /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3.h */,
+				8D50DF96E8FD47BCA1953346 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include/GLFW/glfw3native.h */,
+				49814BCC3BDC486ABC2BB9A4 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.h */,
+				71F70DFB3B234FAC8EA02D7E /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_platform.h */,
+				115A02D4C49843B28B12AAAA /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/internal.h */,
+				7DD6899831CB49DF864F4D2C /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.h */,
+				DBE3C110AEB74232949848FE /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		EE2755FC53A34E72B763EDDC /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22A0FD0BCE8E4454A0F62A5A /* glfw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D41DF2E1F5A4D0AA8899105 /* Build configuration list for PBXNativeTarget "glfw" */;
+			buildPhases = (
+				FB5D6439DB82473BAA0D3F93 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glfw;
+			productName = glfw;
+			productReference = 3AF6FFB9B002489EB585A5DB /* glfw */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7A24FCFC0264457BA603B027 /* model_viewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5D17ABEEF414EE08F62DF45 /* Build configuration list for PBXNativeTarget "model_viewer" */;
+			buildPhases = (
+				11CCF76617FF419E87C84E99 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAEA2FB6880A4F198AD55DE4 /* PBXTargetDependency */,
+				0E6F3427DF0649D6AAB6B830 /* PBXTargetDependency */,
+				769847C8A86C47FBB7371D43 /* PBXTargetDependency */,
+			);
+			name = model_viewer;
+			productName = model_viewer;
+			productReference = 6D46F87154304BB988FD76B2 /* model_viewer */;
+			productType = "com.apple.product-type.application";
+		};
+		FBF7F7CAEC20431B96E08767 /* glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98AFF89EF6284F0DBA43ABF7 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildPhases = (
+				AFA77DAFDB8A453380CB0FFB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81024040219F431AA610469F /* PBXTargetDependency */,
+				963CF2AE4CA44CEE816BF2C7 /* PBXTargetDependency */,
+			);
+			name = glad;
+			productName = glad;
+			productReference = C780BC97765B470B8F53DE74 /* glad */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEFA137A7EF445B6A79462B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0900;
+			};
+			buildConfigurationList = 9CA56A9C04DF413B8A985AE0 /* Build configuration list for PBXProject "ASSIGNMENT_3" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				A5848619E342427A8CDAF3BF /* Debug */,
+				6194E46C1984469ABD9AAA4E /* Release */,
+				2C2F193FE7C84A6A847C5879 /* MinSizeRel */,
+				9EA7596061F04EF9A905F725 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 5B579E4A25884351B3918EAF;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				80E7E48A3C3347BDB4A975E7 /* ALL_BUILD */,
+				81BB684F3B8C4DEEAEB9B038 /* ZERO_CHECK */,
+				FBF7F7CAEC20431B96E08767 /* glad */,
+				7A24FCFC0264457BA603B027 /* model_viewer */,
+				22A0FD0BCE8E4454A0F62A5A /* glfw */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4519B812E11447ECA0F6FBCA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			outputPaths = (
+"/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/juliegerstley/Downloads/Capstone\\ 2D/build -f /Users/juliegerstley/Downloads/Capstone\\ 2D/build/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C5CB9820CE5C4858BCD8823F /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			outputPaths = (
+"/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/juliegerstley/Downloads/Capstone\\ 2D/build -f /Users/juliegerstley/Downloads/Capstone\\ 2D/build/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		DE358DB1777F4DCA831B49E5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		ED5580BE201E4556BC7B779D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11CCF76617FF419E87C84E99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5A868B3B33743D6B8DC17E6 /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/ObjMesh.cpp */,
+				425C5237019C415C8EF864BA /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/SourcePath.cpp */,
+				A4ECA12A16BD41CBBA0584FD /* /Users/juliegerstley/Downloads/Capstone 2D/source/common/Trackball.cpp */,
+				868C776BBBCC4869ADA4980F /* /Users/juliegerstley/Downloads/Capstone 2D/source/model_viewer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA77DAFDB8A453380CB0FFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74606843B29D49D884967BAC /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps/glad.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB5D6439DB82473BAA0D3F93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E54FEE0A16E4F6F9DFF1C8D /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_init.m */,
+				CB483F742C1948CEAD636342 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_joystick.m */,
+				DF330C4F80EF44F89C17EA59 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_monitor.m */,
+				0C2288E32145439FACC04450 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_time.c */,
+				E804F02566B34B9F86E9E62F /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/cocoa_window.m */,
+				5CCD5AECBA0A400DB82C1E27 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/context.c */,
+				664B2CDFC16E4C6F93F1DA5B /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/init.c */,
+				02062FBF4028431D8E1DC1DF /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/input.c */,
+				5EEE144DFCEF4C07B34FE098 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/monitor.c */,
+				C9A69E9651F64FF89E630730 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/nsgl_context.m */,
+				079EEA032F124A0ABA394D95 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/posix_tls.c */,
+				5108487605AB439AB8917F8E /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/vulkan.c */,
+				96D1D988C85B44A3811E7EE5 /* /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src/window.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0E6F3427DF0649D6AAB6B830 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF7F7CAEC20431B96E08767 /* glad */;
+			targetProxy = 0FA9F20994914DC8BA79D5B1 /* PBXContainerItemProxy */;
+		};
+		16AB7C7239A04FA5B3E6E3C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF7F7CAEC20431B96E08767 /* glad */;
+			targetProxy = E5A10B4316AE4505AE4F5CA0 /* PBXContainerItemProxy */;
+		};
+		6247198629C24ADA88D18A0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A24FCFC0264457BA603B027 /* model_viewer */;
+			targetProxy = 3169CA524B494BC581DC65A4 /* PBXContainerItemProxy */;
+		};
+		769847C8A86C47FBB7371D43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81BB684F3B8C4DEEAEB9B038 /* ZERO_CHECK */;
+			targetProxy = D4BA21C341244704AFC525C5 /* PBXContainerItemProxy */;
+		};
+		81024040219F431AA610469F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A0FD0BCE8E4454A0F62A5A /* glfw */;
+			targetProxy = 503AA055D94E42B8A28EDAB7 /* PBXContainerItemProxy */;
+		};
+		9603762AA8B841F3AD4A5762 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81BB684F3B8C4DEEAEB9B038 /* ZERO_CHECK */;
+			targetProxy = 53C7F3150BCA480BA55CE521 /* PBXContainerItemProxy */;
+		};
+		963CF2AE4CA44CEE816BF2C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81BB684F3B8C4DEEAEB9B038 /* ZERO_CHECK */;
+			targetProxy = A4CF253152AE400EAF29428F /* PBXContainerItemProxy */;
+		};
+		AD3AD1A074D346CBAE74EBF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A0FD0BCE8E4454A0F62A5A /* glfw */;
+			targetProxy = 8B7EC504AE5643F99B414347 /* PBXContainerItemProxy */;
+		};
+		BAEA2FB6880A4F198AD55DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A0FD0BCE8E4454A0F62A5A /* glfw */;
+			targetProxy = D89E958F373E479DAAC1AF62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0461819093984F5BB47E8CE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1BCCDAFC05F442129114A166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/build";
+			};
+			name = Release;
+		};
+		207AB58C46EB4CB2A7390994 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INFOPLIST_FILE = "/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/RelWithDebInfo/libglad.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/RelWithDebInfo/libglfw3.a\" -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = model_viewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2287C44053DF4ECC86A5F1C4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		249ADF0DB6A14B68A9AD0721 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src\"","\"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "   -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		33DA84827BFE4DCD8E532C93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/build";
+			};
+			name = Debug;
+		};
+		340BFC688FF64E1B8D69F54E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src\"","\"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3CF53167206E45E189B135CC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3D6CE8783D5946549B79AF5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		4EC2DBD326AB43F4837D3E5C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INFOPLIST_FILE = "/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/MinSizeRel/libglfw3.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/MinSizeRel/libglad.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/MinSizeRel/libglfw3.a\" -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = model_viewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		51B859E169184895AF7852BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		538ADEE924F84782A948D6C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5A97DA18495C46EC894C774F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/build";
+			};
+			name = RelWithDebInfo;
+		};
+		5AFBF8AFE0464281B04784E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5E8FAE5204064FB9821DCAFA /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src\"","\"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7CD1FD9B55504CE3B8F68100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INFOPLIST_FILE = "/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/Debug/libglfw3.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/Debug/libglad.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/Debug/libglfw3.a\" -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = model_viewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7E68AA5A54AA4F3F8770464D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "    -DNDEBUG  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8EE77F965A0049D2A962C7B6 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9A042B592CDF4FB1AC5DB6FF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/build";
+			};
+			name = MinSizeRel;
+		};
+		9FE7F62060A34CB7BD071494 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_GLFW_USE_CONFIG_H);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src\"","\"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src\"");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = "       -DNDEBUG -fPIC -Wall  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glfw3;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A6F3CAD4A6794885A286B69B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E25ED8D9F8DA4EA593A5E841 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		EA6D9ADCBFA54C60A6484DC2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"");
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F6169919BCA6472DBFDB00C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/deps\"","\"/Users/juliegerstley/Downloads/Capstone 2D/source/common\"","\"/Users/juliegerstley/Downloads/Capstone 2D/shaders\"","\"/Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/include\"");
+				INFOPLIST_FILE = "/Users/juliegerstley/Downloads/Capstone 2D/build/CMakeFiles/model_viewer.dir/Info.plist";
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/Release/libglfw3.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/Release/libglad.a\" \"/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/src/Release/libglfw3.a\" -framework Cocoa -framework IOKit -framework CoreFoundation -framework CoreVideo";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = model_viewer;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/juliegerstley/Downloads/Capstone 2D/build";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D15364CB6FF4E1686289D98 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D6CE8783D5946549B79AF5D /* Debug */,
+				538ADEE924F84782A948D6C3 /* Release */,
+				E25ED8D9F8DA4EA593A5E841 /* MinSizeRel */,
+				8EE77F965A0049D2A962C7B6 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		66C66F25AEED47759B43976D /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51B859E169184895AF7852BA /* Debug */,
+				A6F3CAD4A6794885A286B69B /* Release */,
+				2287C44053DF4ECC86A5F1C4 /* MinSizeRel */,
+				EA6D9ADCBFA54C60A6484DC2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7D41DF2E1F5A4D0AA8899105 /* Build configuration list for PBXNativeTarget "glfw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				249ADF0DB6A14B68A9AD0721 /* Debug */,
+				340BFC688FF64E1B8D69F54E /* Release */,
+				5E8FAE5204064FB9821DCAFA /* MinSizeRel */,
+				9FE7F62060A34CB7BD071494 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		98AFF89EF6284F0DBA43ABF7 /* Build configuration list for PBXNativeTarget "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5AFBF8AFE0464281B04784E0 /* Debug */,
+				0461819093984F5BB47E8CE3 /* Release */,
+				7E68AA5A54AA4F3F8770464D /* MinSizeRel */,
+				3CF53167206E45E189B135CC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9CA56A9C04DF413B8A985AE0 /* Build configuration list for PBXProject "ASSIGNMENT_3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA84827BFE4DCD8E532C93 /* Debug */,
+				1BCCDAFC05F442129114A166 /* Release */,
+				9A042B592CDF4FB1AC5DB6FF /* MinSizeRel */,
+				5A97DA18495C46EC894C774F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D5D17ABEEF414EE08F62DF45 /* Build configuration list for PBXNativeTarget "model_viewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CD1FD9B55504CE3B8F68100 /* Debug */,
+				F6169919BCA6472DBFDB00C7 /* Release */,
+				4EC2DBD326AB43F4837D3E5C /* MinSizeRel */,
+				207AB58C46EB4CB2A7390994 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEFA137A7EF445B6A79462B3 /* Project object */;
+}

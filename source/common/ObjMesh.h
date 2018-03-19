@@ -19,7 +19,7 @@ public:
   vec3 box_max;
   vec3 center;
   float scale;
-  
+    
   mat4 model_view;
   
   Mesh(const char * path)
@@ -44,7 +44,7 @@ public:
     for(unsigned int i=0; i < v.normals.size(); i++){
       os << "\t\t" << v.normals[i] << "\n";
     }
- 
+      
     return os;
   }
   

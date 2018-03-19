@@ -7,6 +7,7 @@ bool Mesh::loadOBJ(const char * path){
   std::vector< vec2 > temp_uvs;
   std::vector< vec3 > temp_normals;
   
+    
   hasUV = true;
   
   FILE * file = fopen(path, "r");
