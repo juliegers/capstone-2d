@@ -18,13 +18,13 @@ color4 light_specular( 1.0, 1.0, 1.0, 1.0 );
 
 // Initialize shader material parameters
 //This is hardcoded, vary this (keep ambient uniform, vary materials diffuse, specular, and shininess per model)
-color4 material_ambient[8] = {color4(0.1745, 0.01175, 0.01175, 1.0 ), color4(0.19125, 0.0735, 0.3225, 1.0 ), color4(0.55, 0.55, 0.55, 1.0 ), color4(0.24725, 0.1995, 0.0745, 1.0 ),
+color4 material_ambient[8] = {color4(0.0, 0.0, 0.0, 1.0 ), color4(0.19125, 0.0735, 0.3225, 1.0 ), color4(0.55, 0.55, 0.55, 1.0 ), color4(0.24725, 0.1995, 0.0745, 1.0 ),
     color4(0.235, 0.6225, 0.2575, 1.0 ), color4(0.19225, 0.19225, 0.19225, 1.0 ), color4(0.1125, 0.1275, 0.954, 1.0 ), color4(0.05375, 0.05, 0.06625, 1.0 )
 };
-color4 material_diffuse[8] = {color4(0.61424, 0.04136, 0.04136, 1.0 ), color4(0.7038, 0.27048, 0.3828, 1.0 ), color4(  0.65, 0.65, 0.65, 1.0 ), color4(0.75164, 0.60648, 0.22648, 1.0 ),
+color4 material_diffuse[8] = {color4(0.01, 0.01, 0.01, 1.0 ), color4(0.7038, 0.27048, 0.3828, 1.0 ), color4(  0.65, 0.65, 0.65, 1.0 ), color4(0.75164, 0.60648, 0.22648, 1.0 ),
     color4( 0.64, 0.99, 0.73, 1.0 ), color4( 0.50754, 0.50754, 0.50754, 1.0 ), color4(0.314, 0.4284, 0.98144, 1.0 ), color4( 0.18275, 0.17, 0.22525, 1.0 )
 };
-color4 material_specular[8] = {color4(0.727811, 0.626959, 0.626959, 1.0 ), color4(0.256777, 0.137622, 0.386014, 1.0 ), color4( 0.8, 0.80, 0.80, 1.0 ), color4( 0.628281, 0.555802, 0.366065, 1.0 ),
+color4 material_specular[8] = {color4(0.5, 0.5, 0.5, 1.0 ), color4(0.256777, 0.137622, 0.386014, 1.0 ), color4( 0.8, 0.80, 0.80, 1.0 ), color4( 0.628281, 0.555802, 0.366065, 1.0 ),
     color4(0.416228, 0.716228, 0.416228, 1.0 ), color4(0.508273, 0.508273, 0.508273, 1.0 ), color4(0.193548, 0.271906, 0.966721, 1.0 ), color4(0.332741, 0.328634, 0.346435, 1.0 )
 };
 float material_shininess[8] = {0.6, 0.1, 0.9, 0.4, 0.7, 0.4, 0.2, 0.3};
@@ -33,7 +33,7 @@ float material_shininess[8] = {0.6, 0.1, 0.9, 0.4, 0.7, 0.4, 0.2, 0.3};
 
 //Iterating through all models
 //Files in models (obj)- list of vertices and every vertex has a normal, then faces defined (triangles) which reference a vertex index, if they had a mapping UV coordinate they would be in the second position
-enum{ _CYLINDER, _DODEC, _SPHERE, _CUBOID, _HELIX, _ICOSA, _PYRAMID, _TORUS, _TOTAL_MODELS};
+enum{ _CYLINDER, _DODEC, _SPHERE, _CUBOID, _HELIX, _ICOSA, _PYRAMID, _TOTAL_MODELS};
 //List of files to load
 std::string files[_TOTAL_MODELS] = {
                                     "/models/cylinder.obj",
