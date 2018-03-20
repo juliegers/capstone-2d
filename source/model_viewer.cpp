@@ -262,8 +262,8 @@ void init(){
 
     offsets.resize(mesh.size());
     for(unsigned int i=0; i < offsets.size(); i++){
-        offsets[i].x = -3.5 + rand()/(float)RAND_MAX * 7;;
-        offsets[i].y = -3.5 + rand()/(float)RAND_MAX  * 7;
+        offsets[i].x = -3 + rand()/(float)RAND_MAX * 6;
+        offsets[i].y = -3 + rand()/(float)RAND_MAX  * 6;
         
         std::cout << "Testing model " << i << "\n";
         
