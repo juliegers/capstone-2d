@@ -18,15 +18,16 @@ out vec4 N;
 
 void main()
 {
-  
-  // Transform vertex normal into eye coordinates
-  //Multiply normal my normalmatrix make them all unit vectors, turn into vec4 by adding 0.0 at w term
-  N = vec4(normalize(NormalMatrix*vNormal), 0.0);
-  
-  // Transform vertex position into eye coordinates
-  //actual GL position that will be used by renderer
-  pos = ModelView * vPosition;
-  //Global and hard coded
-  gl_Position = Projection * pos;
-  
+    
+    // Transform vertex normal into eye coordinates
+    //Multiply normal my normalmatrix make them all unit vectors, turn into vec4 by adding 0.0 at w term
+    N = vec4(normalize(NormalMatrix*vNormal), 0.0);
+    
+    // Transform vertex position into eye coordinates
+    //actual GL position that will be used by renderer
+    pos = ModelView * vPosition;
+    //Global and hard coded
+    gl_Position = Projection * pos;
+    
 }
+

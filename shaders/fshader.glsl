@@ -19,28 +19,28 @@ out vec4 fragColor;
 
 void main()
 {
-  
-  // Ambient
-  vec4 ambient = AmbientProduct;
-  
-  // Diffuse
-  float Kd = max(dot(N, LightPosition), 0.0);
-  vec4  diffuse = Kd*DiffuseProduct;
-  
-  //Specular
-  //Compute R and V
-  vec4 E = vec4(0.0, 0.0, 0.0, 1.0);
-  vec4 V = normalize(E - pos);
-  float Ks = pow(max(dot(normalize(-reflect(LightPosition, N)), V),0.0), Shininess);
-  vec4  specular = Ks * SpecularProduct;
-  
-  //FragColor is what is sent out to color pixel based on fragment
-  if((dot(LightPosition, N)) < 0) {
-      fragColor = vec4(0.0, 0.0, 0.0, 1.0);
-  }
-  fragColor = ambient + diffuse + specular;
-  
-  //Assignment is to adjust diffuse and specular and do some tests
+    
+    // Ambient
+    vec4 ambient = AmbientProduct;
+    
+    // Diffuse
+    float Kd = max(dot(N, LightPosition), 0.0);
+    vec4  diffuse = Kd*DiffuseProduct;
+    
+    //Specular
+    //Compute R and V
+    vec4 E = vec4(0.0, 0.0, 0.0, 1.0);
+    vec4 V = normalize(E - pos);
+    float Ks = pow(max(dot(normalize(-reflect(LightPosition, N)), V),0.0), Shininess);
+    vec4  specular = Ks * SpecularProduct;
+    
+    //FragColor is what is sent out to color pixel based on fragment
+    if((dot(LightPosition, N)) < 0) {
+        fragColor = vec4(0.0, 0.0, 0.0, 1.0);
+    }
+    fragColor = ambient + diffuse + specular;
+    
+    //Assignment is to adjust diffuse and specular and do some tests
 }
 
 //Start with diffuse, then specular,
