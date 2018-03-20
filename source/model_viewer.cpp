@@ -356,7 +356,7 @@ int main(void){
   
   glfwWindowHint(GLFW_SAMPLES, 4);
   
-  window = glfwCreateWindow(1000, 1000, "Assignment 3 - 3D Shading", NULL, NULL);
+  window = glfwCreateWindow(1000, 1000, "3D Shapes in 2D", NULL, NULL);
   if (!window){
     glfwTerminate();
     exit(EXIT_FAILURE);
