@@ -6,4 +6,4 @@
 
 #include "SourcePath.h"
 
-std::string source_path = "/Users/juliegerstley/Downloads/Capstone 2D";
+std::string source_path = "/Users/rickidicristoforo/Desktop/capstone-2d";

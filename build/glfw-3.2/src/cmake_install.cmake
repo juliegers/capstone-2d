@@ -1,4 +1,4 @@
-# Install script for directory: /Users/juliegerstley/Downloads/Capstone 2D/glfw-3.2/src
+# Install script for directory: /Users/rickidicristoforo/Desktop/capstone-2d/glfw-3.2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -25,5 +25,10 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   else()
     set(CMAKE_INSTALL_COMPONENT)
   endif()
+endif()
+
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 

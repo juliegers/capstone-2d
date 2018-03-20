@@ -18,6 +18,7 @@ color4 light_specular( 1.0, 1.0, 1.0, 1.0 );
 
 // Initialize shader material parameters
 //This is hardcoded, vary this (keep ambient uniform, vary materials diffuse, specular, and shininess per model)
+<<<<<<< HEAD
 color4 material_ambient[8] = {color4(0.0, 0.0, 0.0, 1.0 ), color4(0.0, 0.0, 0.0, 1.0 ), color4(0.0, 0.0, 0.0, 1.0 ), color4(0.0, 0.0, 0.0, 1.0 ),
     color4(0.0, 0.0, 0.0, 1.0 ), color4(0.0, 0.1, 0.06, 1.0 ), color4(0.0, 0.0, 0.0, 1.0 ), color4(0.0, 0.1, 0.06, 1.0 )
 };
@@ -26,14 +27,28 @@ color4 material_diffuse[8] = {color4(0.01, 0.01, 0.01, 1.0 ), color4(0.1, 0.35, 
 };
 color4 material_specular[8] = {color4(0.5, 0.5, 0.5, 1.0 ), color4(0.45, 0.55, 0.45, 1.0 ), color4( 0.6, 0.6, 0.5, 1.0 ), color4( 0.7, 0.6, 0.6, 1.0 ),
     color4(0.7, 0.6, 0.6, 1.0 ), color4(0.50196078, 0.50196078, 0.50196078, 1.0 ), color4(0.6, 0.6, 0.5, 1.0 ), color4(0.50196078, 0.50196078, 0.50196078, 1.0 )
+=======
+color4 material_ambient[8] = {color4(0.0, 0.0, 0.0, 1.0 ), color4(0, 0, 0, 1.0 ), color4(0.55, 0.55, 0.55, 1.0 ), color4(0.24725, 0.1995, 0.0745, 1.0 ),
+    color4(0.235, 0.6225, 0.2575, 1.0 ), color4(0.19225, 0.19225, 0.19225, 1.0 ), color4(0.1125, 0.1275, 0.954, 1.0 ), color4(0.05375, 0.05, 0.06625, 1.0 )
 };
-float material_shininess[8] = {0.6, 0.1, 0.9, 0.4, 0.7, 0.4, 0.2, 0.3};
+color4 material_diffuse[8] = {color4(0.01, 0.01, 0.01, 1.0 ), color4(0.1, 0.35, 0.1, 1.0 ), color4(  0.65, 0.65, 0.65, 1.0 ), color4(0.75164, 0.60648, 0.22648, 1.0 ),
+    color4( 0.64, 0.99, 0.73, 1.0 ), color4( 0.50754, 0.50754, 0.50754, 1.0 ), color4(0.314, 0.4284, 0.98144, 1.0 ), color4( 0.18275, 0.17, 0.22525, 1.0 )
+};
+color4 material_specular[8] = {color4(0.5, 0.5, 0.5, 1.0 ), color4(0.45, 0.55, 0.45, 1.0 ), color4( 0.8, 0.80, 0.80, 1.0 ), color4( 0.628281, 0.555802, 0.366065, 1.0 ),
+    color4(0.416228, 0.716228, 0.416228, 1.0 ), color4(0.508273, 0.508273, 0.508273, 1.0 ), color4(0.193548, 0.271906, 0.966721, 1.0 ), color4(0.332741, 0.328634, 0.346435, 1.0 )
+>>>>>>> e20c5add1253a8d056033fa0c0fb359c05eeb5e5
+};
+float material_shininess[8] = {1, 1, 0.9, 0.4, 0.7, 0.4, 0.2, 0.3};
 
 
 
 //Iterating through all models
 //Files in models (obj)- list of vertices and every vertex has a normal, then faces defined (triangles) which reference a vertex index, if they had a mapping UV coordinate they would be in the second position
+<<<<<<< HEAD
 enum{_CYLINDER, _DODEC, _SPHERE, _CUBOID, _HELIX, _ICOSA, _PYRAMID, _CONE, _TOTAL_MODELS};
+=======
+enum{ _CYLINDER, _DODEC, _SPHERE, _CUBOID, _HELIX, _ICOSA, _PYRAMID, _TOTAL_MODELS};
+>>>>>>> e20c5add1253a8d056033fa0c0fb359c05eeb5e5
 //List of files to load
 std::string files[_TOTAL_MODELS] = {
                                     "/models/cylinder.obj",
@@ -42,8 +57,12 @@ std::string files[_TOTAL_MODELS] = {
                                     "/models/cuboid.obj",
                                     "/models/helix.obj",
                                     "/models/icosahedron.obj",
+<<<<<<< HEAD
                                     "/models/pyramid.obj",
                                     "/models/cone.obj"
+=======
+                                    "/models/pyramid.obj"
+>>>>>>> e20c5add1253a8d056033fa0c0fb359c05eeb5e5
     
 };
 
@@ -53,8 +72,6 @@ std::vector < Mesh > mesh;
 
 //store random numbers
 std::vector < vec2 > offsets;
-//store random colors
-std::vector <int> coloroffsets;
 
 //Array of vertex array objects and buffer objects
 std::vector < GLuint > buffer;
@@ -265,8 +282,8 @@ void init(){
 
     offsets.resize(mesh.size());
     for(unsigned int i=0; i < offsets.size(); i++){
-        offsets[i].x = -3.5 + rand()/(float)RAND_MAX * 7;;
-        offsets[i].y = -3.5 + rand()/(float)RAND_MAX  * 7;
+        offsets[i].x = -3 + rand()/(float)RAND_MAX * 6;
+        offsets[i].y = -3 + rand()/(float)RAND_MAX  * 6;
         
         std::cout << "Testing model " << i << "\n";
         
@@ -301,10 +318,6 @@ void init(){
     }
     
     //do same thing with colors
-    coloroffsets.resize(mesh.size());
-    for(unsigned int i=0; i < coloroffsets.size(); i++){
-        coloroffsets[i] = rand() % 8;
-    }
     
     
   //===== End: Send data to GPU ======
@@ -363,7 +376,7 @@ int main(void){
   
   glfwWindowHint(GLFW_SAMPLES, 4);
   
-  window = glfwCreateWindow(1000, 1000, "Assignment 3 - 3D Shading", NULL, NULL);
+  window = glfwCreateWindow(1000, 1000, "3D Shapes in 2D", NULL, NULL);
   if (!window){
     glfwTerminate();
     exit(EXIT_FAILURE);
@@ -407,12 +420,6 @@ int main(void){
 
     //"Camera" position
     const vec3 viewer_pos( 0.0, 0.0, 10.0 );
-    
-    //Track_ball rotation matrix
-    mat4 track_ball =  mat4(curmat[0][0], curmat[1][0], curmat[2][0], curmat[3][0],
-                            curmat[0][1], curmat[1][1], curmat[2][1], curmat[3][1],
-                            curmat[0][2], curmat[1][2], curmat[2][2], curmat[3][2],
-                            curmat[0][3], curmat[1][3], curmat[2][3], curmat[3][3]);
       
       //for loop all shapes
       for(unsigned int i=0; i < mesh.size(); i++){

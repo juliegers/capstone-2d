@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>ALL_BUILD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+<<<<<<< HEAD:build/ASSIGNMENT_3.xcodeproj/xcuserdata/juliegerstley.xcuserdatad/xcschemes/xcschememanagement.plist
+			<integer>0</integer>
+=======
+			<integer>2</integer>
+>>>>>>> e20c5add1253a8d056033fa0c0fb359c05eeb5e5:build/ASSIGNMENT_3.xcodeproj/xcuserdata/rickidicristoforo.xcuserdatad/xcschemes/xcschememanagement.plist
+		</dict>
+		<key>ZERO_CHECK.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>glad.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>glfw.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>model_viewer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/SourcePath.cpp \
-  /Users/juliegerstley/Downloads/Capstone\ 2D/source/common/SourcePath.h
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/SourcePath.cpp \
+  /Users/rickidicristoforo/Desktop/capstone-2d/source/common/SourcePath.h

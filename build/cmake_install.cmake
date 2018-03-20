@@ -1,4 +1,4 @@
-# Install script for directory: /Users/juliegerstley/Downloads/Capstone 2D
+# Install script for directory: /Users/rickidicristoforo/Desktop/capstone-2d
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,9 +27,14 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
+# Is this installation the result of a crosscompile?
+if(NOT DEFINED CMAKE_CROSSCOMPILING)
+  set(CMAKE_CROSSCOMPILING "FALSE")
+endif()
+
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/juliegerstley/Downloads/Capstone 2D/build/glfw-3.2/cmake_install.cmake")
+  include("/Users/rickidicristoforo/Desktop/capstone-2d/build/glfw-3.2/cmake_install.cmake")
 
 endif()
 
@@ -41,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/juliegerstley/Downloads/Capstone 2D/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/rickidicristoforo/Desktop/capstone-2d/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
