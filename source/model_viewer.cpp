@@ -42,8 +42,7 @@ std::string files[_TOTAL_MODELS] = {
                                     "/models/cuboid.obj",
                                     "/models/helix.obj",
                                     "/models/icosahedron.obj",
-                                    "/models/pyramid.obj",
-                                    "/models/torus.obj"
+                                    "/models/pyramid.obj"
     
 };
 
@@ -53,8 +52,6 @@ std::vector < Mesh > mesh;
 
 //store random numbers
 std::vector < vec2 > offsets;
-//store random colors
-std::vector <int> coloroffsets;
 
 //Array of vertex array objects and buffer objects
 std::vector < GLuint > buffer;
@@ -301,10 +298,6 @@ void init(){
     }
     
     //do same thing with colors
-    coloroffsets.resize(mesh.size());
-    for(unsigned int i=0; i < coloroffsets.size(); i++){
-        coloroffsets[i] = rand() % 8;
-    }
     
     
   //===== End: Send data to GPU ======
