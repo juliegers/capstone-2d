@@ -400,12 +400,6 @@ int main(void){
 
     //"Camera" position
     const vec3 viewer_pos( 0.0, 0.0, 10.0 );
-    
-    //Track_ball rotation matrix
-    mat4 track_ball =  mat4(curmat[0][0], curmat[1][0], curmat[2][0], curmat[3][0],
-                            curmat[0][1], curmat[1][1], curmat[2][1], curmat[3][1],
-                            curmat[0][2], curmat[1][2], curmat[2][2], curmat[3][2],
-                            curmat[0][3], curmat[1][3], curmat[2][3], curmat[3][3]);
       
       //for loop all shapes
       for(unsigned int i=0; i < mesh.size(); i++){
